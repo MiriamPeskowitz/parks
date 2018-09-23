@@ -6,6 +6,7 @@ class ParksController < ApplicationController
       .order(:full_name)
       .by_state(params[:state])
       .all
+# active record scopes 
 
     @states = State.all.order(:abbreviation)
     @selected = params[:state]
