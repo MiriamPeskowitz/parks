@@ -12,7 +12,8 @@
       "abbreviation",
       @selected
     ),
-    include_blank: "All"
+    include_blank: "All",
+    id: "state_select"
   ) %>
   <%= submit_tag "Search" %>
 <% end %>
@@ -27,3 +28,14 @@
 <% end %>
 
 <%= will_paginate @parks %>
+
+can be: 
+window.init = function() {
+  $(function () {)
+   $('.parks-list').on('click", function() {
+    console.log(event);
+    });
+  })
+};
+
+init();
